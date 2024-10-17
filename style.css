@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url('/image/background.png'); /* Ganti dengan jalur gambar Anda */
+    background-image: url('/image/background.webp'); /* Ganti dengan jalur gambar Anda */
     background-size: cover; /* Menutupi seluruh area elemen */
     background-position: center; /* Memusatkan gambar */
     background-repeat: no-repeat; /* Menghindari pengulangan gambar */
