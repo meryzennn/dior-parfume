@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+    background-image: url('/image/background.png'); /* Ganti dengan jalur gambar Anda */
+    background-size: cover; /* Menutupi seluruh area elemen */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+
+
+.navbar-brand {
+    font-family: "Annapurna SIL", serif; 
+    font-weight: 400;
+}
+.navbar-toggler,
+.search-icon {
+    font-size: 24px;
+}
+
+.offcanvas-title {
+    font-family: "Annapurna SIL", serif;
+    text-align: center; /* Memusatkan teks */
+    width: 100%; /* Memastikan lebar penuh untuk pemusatan */
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+.description-title {
+    font-size: 1rem;
+    color: #e8e8e8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.card-custom {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-custom {
+    background-color: #4a4a8c;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    background-color: #3b3b73;
+}
+
+.intensity {
+    color: #6c757d;
+}
+
+.fragrances{
+    font-size: 1rem;
+    color: #e8e8e8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.link-off{
+    position: relative;
+    text-align: center;
+}
+
+.link-off{
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#offcanvasDarkNavbar {
+    background-color: #D9D9D9 !important; 
+}
+
+.offcanvas-header .offcanvas-title {
+    color: #000000; /* Ubah warna tulisan menjadi hitam */
+}
+
+.card-title{
+    font-family:"Annapurna SIL", serif ;
+}
+.card-text,.intensity,.price{
+    font-family: "Carlito", sans-serif;
+}
