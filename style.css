@@ -104,10 +104,6 @@ body {
     padding-left: 50px;
 }
 
-#offcanvasDarkNavbar {
-    background-color: #D9D9D9; 
-}
-
 .offcanvas-header .offcanvas-title {
     color: #000000; /* Ubah warna tulisan menjadi hitam */
 }
@@ -118,3 +114,4 @@ body {
 .card-text,.intensity,.price{
     font-family: "Carlito", sans-serif;
 }
+
