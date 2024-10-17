@@ -40,8 +40,7 @@
                 </li>
               </ul>
               <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Search</button>
+                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
               </form>
               
               <div class="link-off">
@@ -180,10 +179,7 @@
           </div>
         </div>
     </div>
-    <!-- akhirs-card2 -->
-
-    <!-- akhir-card -->
-
+    
     <!-- awal-footer -->
     <footer class="bg-light text-dark pt-4">
       <div class="container">
@@ -238,23 +234,7 @@
     <!-- akhir-footer -->
 
     <!-- awal-js -->
-    <script>
-      document.querySelector('form[role="search"]').addEventListener('submit', function(event) {
-          event.preventDefault(); // Mencegah pengiriman form
-          const query = event.target.querySelector('input[type="search"]').value.toLowerCase();
-          const items = document.querySelectorAll('.search-item');
-  
-          items.forEach(item => {
-              const title = item.querySelector('.card-title').textContent.toLowerCase();
-              const text = item.querySelector('.card-text').textContent.toLowerCase();
-              if (title.includes(query) || text.includes(query)) {
-                  item.style.display = ''; // Tampilkan item jika cocok
-              } else {
-                  item.style.display = 'none'; // Sembunyikan item jika tidak cocok
-              }
-          });
-      });
-    </script>
+    
   
     <!-- akhir-js -->
 
@@ -264,4 +244,23 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
+<!-- akhirs-card2 -->
+<script>
+  document.getElementById('searchInput').addEventListener('input', function() {
+      const query = this.value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+          const title = card.querySelector('.card-title').textContent.toLowerCase();
+          const text = card.querySelector('.card-text').textContent.toLowerCase();
+
+          if (title.includes(query) || text.includes(query)) {
+              card.parentElement.style.display = 'block'; // Tampilkan kartu
+          } else {
+              card.parentElement.style.display = 'none'; // Sembunyikan kartu
+          }
+      });
+  });
+</script>
+<!-- akhir-card -->
 </html>
